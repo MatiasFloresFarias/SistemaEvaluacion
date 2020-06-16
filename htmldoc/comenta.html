@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/stylecomenta.css">
     <script src="../assets/js/jquery-3.5.1.js"></script>
 
 
@@ -27,28 +28,58 @@
             </div>
         </header>
         <main>
-                <!-- -------------------------------------banber-------------------------------------------------- -->
-
-            <section id="banner">
-                <img src="../assets/img/Fondo-Banner.png">
-                <div class="contenedor">
-                    <h2>Pagina de pruebas para probar efectos</h2>
-                    <p>Awake lab</p>
+                <!-- -------------------------------------Formulario-------------------------------------------------- -->
+               <div class="contenedorform">
+                   <div class="card">
+                    <form  class="contact_form" action="#" id="contact_form" runat="server">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h2>Sapea a tu profe</h2>
+                                    <span class="required_notification">* Datos requeridos</span>
+                                </li>
+                                <li>
+                                    <label for="name">Quien eres:</label>
+                                    <input type="text" placeholder="Ingresa tu nombre" required />
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" placeholder="info@awakelab.com" required />
+                                    <span class="form_hint">Formato correcto: "name@tucorreo.com"</span>
+                                </li>
+                                <li>
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" placeholder="Nombre del profesor" required />
+                                </li>
+                                <li>
+                                    <label for="name">asignatura:</label>
+                                    <input type="text" placeholder="Asignatura que realiza" required />
+                                </li>
     
-                </div>
-            </section>
+                            
+                                <li>
+                                    <label for="message">Comenta:</label>
+                                    <textarea name="message" cols="40" rows="6" required></textarea>
+                                </li>
+                                <li>
+                                    <button class="submit" type="submit">Enviar mensaje</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                   </div>
+               </div>      
     
 
 
         </main>
             <!-- -------------------------------------Footer-------------------------------------------------- -->
 
-        <footer>
-            <div class="contenedor">
-                <p class="copy">Ejemplo de footer &copy; 2020</p>
-    
-            </div>
-        </footer>
+            <footer>
+                <div class="contenedor">
+                    <p class="copy">Desarrollado para <a href="www.awakelab.cl"><b>Awakelab</b></a> &copy; 2020</p>
+                </div>
+            </footer>
     
     
         <script src="../assets/js/menu.js"></script>
