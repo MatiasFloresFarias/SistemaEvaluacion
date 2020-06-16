@@ -6,7 +6,7 @@ $(function() {
             val = val.toLowerCase();
             $.each(usersArray, function(_, obj) {
                 // console.log(val,obj.name.toLowerCase().indexOf(val),obj)
-                if (obj.name.toLowerCase().indexOf(val) != -1 || obj.university.toLowerCase().indexOf(val) != -1 || obj.subject.toLowerCase().indexOf(val) != -1) {
+                if (obj.name.toLowerCase().indexOf(val) != -1 || obj.university.toLowerCase().indexOf(val) != -1 || obj.subject.toLowerCase().indexOf(val) != -1 || obj.university1.toLowerCase().indexOf(val) != -1 || obj.subject1.toLowerCase().indexOf(val) != -1) {
                     $("#users").append('<div class="user-card"><span class="user-info">' + obj.name + '</span><br/><img class="user-image" src="' + obj.image + '"/></div>');
                 }
             });
@@ -16,150 +16,112 @@ $(function() {
 });
 
 var usersArray = [{
-        name: "Juanin Juan Harry",
-        university: "USM",
-        subject: "maths",
-        age: 21,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Juan Manuel Villalba",
+        university: "Instituto Aplaplac",
+        university1: "Universidad de Shule",
+        subject: "fisica",
+        subject1: "matematicas",
+        age: 58,
+        image: "../assets/img/profjpg/58.jpg"
     },
     {
-        name: "Tulio Triviño",
-        university: "PUC",
-        subject: "maths",
-        age: 20,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Angelica San Martin",
+        university: "Universidad de Shule",
+        university1: "Universidad Federico Santa Maria",
+        subject: "termodinamica",
+        subject1: "gestion energética",
+        age: 48,
+        image: "../assets/img/profjpg/48.jpg"
     },
     {
-        name: "Milo Westfall",
-        university: "UCh",
-        subject: "maths",
-        age: 31,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Augusto Granados",
+        university: "Universidad de Shule",
+        university1: "Universidad Federico Santa Maria",
+        subject: "Calculo 3",
+        subject1: "Algebra 3",
+        age: 64,
+        image: "../assets/img/profjpg/64.jpg"
     },
     {
-        name: "Dayna Bennefield",
-        university: "USACH",
-        subject: "maths",
-        age: 27,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Clotilde Montoya",
+        university: "Universidad de Shule",
+        university1: "Universidad de las Europas",
+        subject: "Sociologia",
+        subject1: "Sicologia",
+        age: 46,
+        image: "../assets/img/profjpg/46.jpg"
     },
     {
-        name: "Danny Eckhoff",
-        university: "USM",
-        subject: "maths",
-        age: 18,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Eugenio Ruz",
+        university: "Universidad de Shule",
+        university1: "Instituo Michael J. Fox",
+        subject: "Programacion",
+        subject1: "Bases de datos",
+        age: 55,
+        image: "../assets/img/profjpg/55.jpg"
     },
     {
-        name: "Estella Fosdick",
-        university: "PUC",
-        subject: "maths",
-        age: 51,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Robert Perez",
+        university: "Universidad de Shule",
+        university1: "Universidad Federico Santa Maria",
+        subject: "fisica 2",
+        subject1: "fisica 4",
+        age: 38,
+        image: "../assets/img/profjpg/38.jpg"
     },
     {
-        name: "Farah Benson",
-        university: "Uch",
-        subject: "philosophy",
-        age: 77,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Monica Carro",
+        university: "Universidad de Shule",
+        university1: "Instituto Duroc",
+        subject: "Programacion",
+        subject1: "Desarrollo de aplicaciones web",
+        age: 33,
+        image: "../assets/img/profjpg/33.jpg"
     },
     {
-        name: "Keith Gross",
-        university: "USM",
-        subject: "philosophy",
-        age: 21,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Isidora Martinez",
+        university: "Universidad de Shule",
+        university1: "Universidad Federico Santa Maria",
+        subject: "Programacion",
+        subject1: "Sistemas de informacion y gestion",
+        age: 37,
+        image: "../assets/img/profjpg/37.jpg"
     },
     {
-        name: "Malcolm X",
-        university: "USM",
-        subject: "physics",
-        age: 20,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Amaya Mayor",
+        university: "Universidad de Shule",
+        university1: "Instituto Aplaplac",
+        subject: "microeconomia",
+        subject1: "macroeconomia",
+        age: 38,
+        image: "../assets/img/profjpg/38.jpg"
     },
     {
-        name: "Jhon Cena",
-        university: "USM",
-        subject: "economy",
-        age: 31,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Nazaret Jimenez",
+        university: "Universidad de Shule",
+        university1: "PUC",
+        subject: "Finanzas",
+        subject1: "Religion",
+        age: 53,
+        image: "../assets/img/profjpg/53.jpg"
     },
     {
-        name: "Rich Ross",
-        university: "USM",
-        subject: "economy",
-        age: 27,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        name: "Brian Guzman",
+        university: "Awakelab",
+        university1: "Adalid",
+        subject: "Programacion",
+        subject1: "Bases de datos",
+        age: 45,
+        image: "../assets/img/profjpg/Brian.jpg"
     },
     {
-        name: "Charlie Sheen",
-        university: "USM",
-        subject: "economy",
+        name: "Oscar Gonzalez",
+        university: "Awakelab",
+        university1: "Adalid",
+        subject: "Programacion",
+        subject1: "Bases de datos",
         age: 44,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
+        image: "../assets/img/profjpg/Oscar.jpg"
     },
-    {
-        name: "Lena Donovan",
-        university: "USM",
-        subject: "thermodynamics",
-        age: 51,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Jay Kos",
-        university: "USM",
-        subject: "thermodynamics",
-        age: 77,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Vincent Robert",
-        university: "USM",
-        subject: "thermodynamics",
-        age: 21,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Adam Rodriguez",
-        university: "USM",
-        subject: "thermodynamics",
-        age: 20,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Jhon Travolta",
-        university: "USM",
-        subject: "thermodynamics",
-        age: 31,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Ben Mackferson",
-        university: "USM",
-        subject: "finance",
-        age: 27,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Stella Cox",
-        university: "USM",
-        subject: "finance",
-        age: 18,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Jenna Johnson",
-        university: "USM",
-        subject: "finance",
-        age: 51,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    },
-    {
-        name: "Bill Tim",
-        university: "USM",
-        subject: "finance",
-        age: 77,
-        image: "https://placeimg.com/140/140/people?t=" + Math.random()
-    }
+
 ];
