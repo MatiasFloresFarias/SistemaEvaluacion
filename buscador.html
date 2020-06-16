@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscador</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/JQuery/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="assets/css/buscador.css">
+    <script src="assets/jQuery/jquery-3.5.1.js"></script>
 
 
 </head>
@@ -30,16 +31,41 @@
             </div>
         </header>
         <main>
-            <!-- -------------------------------------banber-------------------------------------------------- -->
+            <!-- -------------------------------------banner-------------------------------------------------- -->
 
             <section id="banner">
+
                 <img src="assets/img/Fondo-Banner.png">
                 <div class="contenedor">
-                    <h2>Comenta al profe </h2>
-                    <p>Awake lab</p>
-
+                    <h2>Buscador</h2>
                 </div>
             </section>
+
+            <div class="container">
+                <!-- <h2>Profesores:</h2> -->
+                <input type="text" id="search" placeholder="Search by name, university or subject ...">
+
+                <div class="clear"></div>
+
+                <div id="template" class="user-card">
+                    <div class="user-image">
+                        <!-- <img src=""> -->
+                    </div>
+                    <div class="user-info">
+                        <h4 class="name"></h4>
+                        <h5 class="age"></h5>
+                    </div>
+                </div>
+
+                <p class="not-found">
+                    No users found, please change search criteria...
+                </p>
+
+                <section id="users">
+
+                </section>
+            </div>
+
 
 
 
@@ -48,18 +74,13 @@
 
         <footer>
             <div class="contenedor">
-<<<<<<< HEAD
-                <p class="copy">Desarrollado para <a href="www.awakelab.cl"><b>Awakelab</b></a> &copy; 2020</p>
-    
-=======
                 <p class="copy">Ejemplo de footer &copy; 2020</p>
 
->>>>>>> 13e844822682cad3d0851ac1b9bd3965945ad1e3
             </div>
         </footer>
 
 
-        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/buscador.js"></script>
     </body>
 </body>
 
