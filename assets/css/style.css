@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
-@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
-
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
@@ -14,14 +12,14 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-
 }
 
 header {
 	width: 100%;
 	height: 50px;
 	background: #333;
-	color: #fff;	
+	color: #fff;
+	
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -35,7 +33,6 @@ header {
 
 h1 {
 	float: left;
-	
 }
 
 header .contenedor {
@@ -51,12 +48,16 @@ section {
 	text-align: center;
 }
 
-footer  {
-	/* background-color: crimson; */
-	line-height: 2;
-	text-align: center;
-	width: 100%;
-	align-self: flex-end;
+footer .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	
+	padding-bottom: 25px;
+	bottom: 0;
+
+	
+	
+	
 }
 
 .copy {
@@ -105,7 +106,6 @@ footer  {
 #banner {
 	margin-top: 50px;
 	position: relative;
-	
 }
 
 #banner img {
@@ -122,11 +122,7 @@ footer  {
 }
 
 #banner h2 {
-	
-	font-family: 'Joti One', cursive;
-	color: darkgoldenrod;
-	f
-
+	font-size: 28px;
 }
 
 
@@ -208,7 +204,7 @@ header label {
 	margin: 6px 0;
 	cursor: pointer;
 }
-/* -------------------------------------------------menu--------------------------------------------- */
+
 .menu {
 	position: absolute;
 	top: 50px;
