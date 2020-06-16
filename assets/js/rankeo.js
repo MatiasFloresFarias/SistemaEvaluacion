@@ -2,7 +2,8 @@
 $(function () {
     $("#rankeo").rateYo({
       rating: 4.0,
-      halfStar: true
+      halfStar: true,
+      readOnly: true
     });
    
 });
