@@ -93,4 +93,9 @@ $('#enviar').on('click', function() {
         asignatura,
         comentario
     ]).draw(false);
+
+    $('html, body').animate({
+        scrollTop: $("#datatable").offset().top
+    }, 2000);
+
 });
