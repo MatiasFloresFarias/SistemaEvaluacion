@@ -50,3 +50,30 @@ button{
 
     
 }
+@media(max-width:640px){
+
+    #contenedor{
+       
+        width: 100%;
+        height: auto; 
+       
+    }
+    .mapa{
+
+        padding: 0px 0px 0px 0px;
+        background:transparent;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    #formulariodecontacto{
+
+        padding: 0px 0px 0px 0px;
+        background:transparent;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 90%;
+
+        
+    }
+}
