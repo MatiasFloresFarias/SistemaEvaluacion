@@ -131,13 +131,13 @@ i {
 
 @media screen and (max-width:768px) {
 
-    /* make the layout  a single column and add some margin to the wrapper */
+
     #form_log {
         grid-template-columns: 1fr;
         margin-left: 10px;
         margin-right: 10px;
     }
-    /* on small screen we don't display the image */
+
     #form_left {
         display: none;
     }
