@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best profe</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <title>Best profe</title>  
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/stylecomenta.css">
-
-    <script src="../assets/js/jquery-3.5.1.js"></script>
-    <script src="../assets/JQuery/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="/assets/css/stylebest.css">   
-    <script src="../assets/jQuery/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../assets/css/stylebest.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
+    <script src="../assets/js/js/jquery-3.5.1.js"></script>
+    <script src="../assets/js/js/chart.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
 
+
+
+   
+  
 
 
 </head>
 
 <body>
 
-    <body>
+    <body></body>
         <!-- -----------------------------------header----------------------------------- -->
         <header>
             <div class="contenedor">
@@ -42,48 +43,35 @@
         <main>
             <!-- -------------------------------------banber-------------------------------------------------- -->
 
-            <div class="best-contenedor">
-    <!-- -------------------------------------acordeon-------------------------------------- -->
-    <div id="accordion">
-        <h3>Primera Historia</h3>
-        <div>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate adipisci accusamus provident
-                obcaecati iste voluptas temporibus iure dolore quisquam.
-            </p>
-        </div>
-        <h3>Segunda Historia</h3>
-        <div>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate adipisci accusamus provident
-                obcaecati iste voluptas temporibus iure dolore quisquam.
-            </p>
-        </div>
-        <h3>Tercera Historia</h3>
-        <div>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate adipisci accusamus provident
-                obcaecati iste voluptas temporibus iure dolore quisquam.
-            </p>
-        </div>
-        <h3>Cuarta Historia</h3>
-        <div>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate adipisci accusamus provident
-                obcaecati iste voluptas temporibus iure dolore quisquam.
-            </p>
-        </div>
-        <h3>Quinta Historia</h3>
-        <div>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate adipisci accusamus provident
-                obcaecati iste voluptas temporibus iure dolore quisquam.
-            </p>
-        </div>
-    </div>
-
+            <h2>Graficas de comparacion de profesores</h2>
+            <p>Dirección Meteorológica</p>
+            
+            <div class="tab">
+              <button class="tablinks" onclick="opengrafico(event, 'Barras')">Grafico de barras</button>
+              <button class="tablinks" onclick="opengrafico(event, 'Lineas')">Grafico de lineas</button>
+              <button class="tablinks" onclick="opengrafico(event, 'Tortas')">Grafico de torta</button>
             </div>
-
+            
+            <div id="Barras" class="tabcontent">
+              <h3>Mejores  profesores</h3>
+              <p>Notas por profesor</p>
+              <div class="graficos">
+                <canvas id="graficoBarras" ></canvas>
+              </div>
+            </div>
+            
+            <div id="Lineas" class="tabcontent">
+              <h3>Compartiva entre semestres</h3>
+              <p>Comparativa de notas que se le han otorgado a los profesores, antes y despues de la creacion de la plataforma </p> 
+              <canvas id="graficoLineas" ></canvas>
+            </div>
+            
+            <div id="Tortas" class="tabcontent">
+              <h3>Metricas de skill del mejor profesor</h3>
+              <p>Nota entre las diferentes fortalezas y devilidades de profesor con maximo puntaje </p>
+                <canvas id="graficoTorta" ></canvas>
+            </div>
+        
 
             <div id="dialog1" title="Log-out">
                 <p> "te has deslogueado, adios maldita lisiada"</p>
@@ -102,11 +90,10 @@
 
 
 
-        <script src="../assets/js/menu.js"></script>
-        <script src="../assets/js/best.js"></script>
+        <script src="../assets/js/menu.js"></script>       
         <script src="../assets/js/login.js"></script>
+        <script src="../assets/js/best.js"></script>
 
     </body>
-</body>
 
 </html>
