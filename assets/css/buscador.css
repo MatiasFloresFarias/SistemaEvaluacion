@@ -5,8 +5,12 @@
 } */
 
 .container {
-    width: 810px;
-    margin: auto;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* position: left; */
+    /* margin: 3em 3em 3em 3em; */
 }
 
 
@@ -15,9 +19,14 @@
 } */
 
 #search {
-    float: left;
-    width: 50%;
-    /* margin-top: 30px; */
+    /* float: left; */
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 
@@ -65,3 +74,14 @@
 #template {
     display: none;
 }
+
+#banner {
+    text-align: center;
+}
+
+
+/* main::after {
+    content: "";
+    clear: both;
+    display: flex;
+} */
