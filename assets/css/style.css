@@ -14,7 +14,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	
-	
 }
 
 header {
@@ -52,17 +51,34 @@ section {
 	text-align: center;
 }
 
-footer .contenedor {
-	display: flex;
-	flex-wrap: wrap;
-	padding-bottom: 25px;
-	bottom: 0;
+footer{
+	left: 0px;
+    bottom: 0;
+	width: 100%;
+	height: 7em;
+    background: rgb(0, 0, 0);
+    margin-top: 0;
+    position: static;
+    display: flex;
+	flex-flow: column nowrap;
+	padding-top: 3em;
+	
 }
 
 
+/* footer .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0;
+} */
+
+
 .copy {
-	font-size: 20px;
-	
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
 }
 
 
@@ -164,6 +180,7 @@ footer .contenedor {
 	color: #fff;
 	text-align: center;
 	padding: 20px;
+	margin: 0;
 }
 
 #info .contenedor {
@@ -173,7 +190,7 @@ footer .contenedor {
 }
 
 .info-info {
-	margin: 20px;
+	margin: 20px 20px 0px 20px;
 }
 
  img {
