@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/stylelog.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.16.0/js/md5.js"></script>
     <script src="assets/JQuery/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 
 <body>
@@ -34,12 +37,37 @@
                     <input type="submit" value="Entrar" id="input_submit" class="input_field">
                 </form>
 
-                <span>Te Perdiste <a href="index.html"> Correo / Contraseña ?</a></span>
+                <span>Te Perdiste <a href="#"> Correo / Contraseña ?</a></span>
                 <span id="create_account">
-                    <a href="#">Crea tu cuenta en sapeatuprofe.cl ➡ </a>
+                    <a id = "create-user" href="#">Crea tu cuenta en sapeatuprofe.cl ➡ </a>
                 </span>
             </div>
         </div>
+
+        <div id="dialog-form" title="Create new user">
+            <p class="validateTips">All form fields are required.</p>
+
+            <form>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all"><br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="text ui-widget-content ui-corner-all">
+
+                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="dialog1" title="Failed Log in">
+            <p>Wrong User</p>
+        </div>
+
+        <div id="dialog2" title="Failed Log in">
+            <p>Wrong Password</p>
+        </div>
+
     </body>
     <script src="assets/js/menu.js"></script>
 </body>
