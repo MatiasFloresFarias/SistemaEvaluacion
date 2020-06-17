@@ -1,7 +1,7 @@
 // -----------------------------------------menu-------------------------------------------------
 var user = ["mlillo@correo.com", "mflores@correo.com", "jtolorza@correo.com", "mgaete@correo.com", "clloncon@correo.com"];
 var pswd = ["e0c826b1c1532015b386addb63147c5e", "143d42165dfaa0e4870b787d8d0cb125", "048056ad6efca97d0b4cff5f0114bb09", "6896feb8e3499d6dc48e4dc5625b4020", "2b9ff3efc4a999ecfacd18c4bbc57a2e"];
-
+var userIndex
 
 $(document).ready(function() {
 
@@ -13,7 +13,7 @@ $(document).ready(function() {
             if ($("#field_email").val() == user[index]) {
                 contU++;
                 if (md5($("#field_password").val()) == pswd[index]) {
-                    // alert("login correcto");
+                    localStorage["user"] = user[index].substr(0, user[index].indexOf('@'));
                     window.open("index.html", "_self")
                     contP++;
                     break;
@@ -30,6 +30,7 @@ $(document).ready(function() {
     });
 
 });
+
 
 
 $(function() {
