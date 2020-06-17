@@ -239,11 +239,21 @@ body {
         width: 60%;
     }
     #comentario {
-        width: 30%;
+        width: 50%;
     }
     #enviar.submit {
-        margin-left: 3em;
+        margin-left: 8em;
     }
 }
 
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+    .card {
+        width: 40%;
+    }
+    #enviar.submit {
+        margin-left: 8em;
+    }
+    #comentario {
+        width: 90%;
+    }
+}
