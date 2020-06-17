@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#datatable').DataTable();
+    $('#datatable').DataTable({ "pageLength": 20 });
 });
 
 $(function() {
