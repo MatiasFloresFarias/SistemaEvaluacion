@@ -1,6 +1,6 @@
+//LOGIN
 var usuario = localStorage["user"];
 $(document).ready(function() {
-    alert(usuario)
     if (usuario == "") {
         $("#usuario").html("Log-in")
     } else {
