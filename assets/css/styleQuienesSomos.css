@@ -32,6 +32,7 @@ header {
 	text-align: center;
 	position: relative;
 
+
 }
 
 
@@ -46,16 +47,17 @@ header .contenedor {
 
 section .contenedor{
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	margin-bottom: 100%;
 	background-size: 100%;
     animation-name: banner;
     animation-duration: 5s;
 	animation-iteration-count: infinite;
-	opacity: 0.8;
+	opacity: 0.9;
 
 
 }
+
 
 @keyframes banner{
 	0%, 50% {
@@ -70,7 +72,7 @@ section .contenedor{
 .contenedor1 {
 	background-color: skyblue;
 	margin-bottom:  100px;
-	height: 350px;
+	height: 750px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -90,6 +92,41 @@ footer .contenedor {
 	font-size: 20px;
 	
 }
+
+/* Efecto Circulo Inicio*/
+.overlayone-radius{ /* Propiedades de imagen */
+margin:0px;
+text-align: center;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px;
+padding: 0px;
+width: 450px;
+height: 10px;
+display: inline-block;
+position: relative;
+}
+.overlayinn-radius{ /* Propiedades de la transparencia */
+background-color: rgba(63, 46, 223, 0.719);
+padding: 0px 1px; 
+width: 200px; /* ancho del contenedor de texto */
+height: 280px; /* alto del contenedor de texto */
+border-radius: 500px; /* Tamaño del circulo */
+opacity: 0; /* esta condicion mantiene el texto oculto */
+top: 10px; /*distancia hacia abajo*/
+left: 125px; /*distancia hacia la derecha*/
+position: absolute;
+padding: 20px; /* espacio entre texto y bordes */
+transition: opacity .5s;
+text-align: center; /* texto centrado */
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px; /* tamaño de letra */
+color:#ffffff; /* color de texto */
+}
+.overlayinn-radius:hover { /* Efecto al pasar el mouse */
+opacity: 1;
+transition: opacity .5s;
+}
+/* Final Efecto Circulo*/
 
 
 
@@ -193,7 +230,10 @@ footer .contenedor {
 }
 
 .info-info {
-	margin: 10px;
+	margin: 0px;
+	height: 300px;
+	width: 200px;
+
 }
 
 .info-info img {
@@ -207,11 +247,12 @@ footer .contenedor {
 	.info-info {
 		width: 40%;
 	}
+
 }
 
 @media (min-width:1024px) {
 	.info-info {
-		width: auto;
+		width: auto
 	}
 }
 #menu-bar {
