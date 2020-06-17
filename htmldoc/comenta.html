@@ -11,6 +11,9 @@
     <script src="../assets/jQuery/jquery-3.5.1.js"></script>
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="../assets/js/rankeo.js"></script>
 
 </head>
 
@@ -42,7 +45,7 @@
                         <div>
                             <ul>
                                 <li>
-                                    <h2>Sapea a tu profe</h2>
+                                    <h2>Comenta</h2>
                                     <span class="required_notification">* Datos requeridos</span>
                                 </li>
                                 <li>
@@ -71,6 +74,12 @@
                                 <li>
                                     <label for="message">Comenta:</label>
                                     <textarea name="message" id="comentario" cols="40" rows="6" required></textarea>
+                                </li>
+                                <li>
+                                    <div id="rank">
+                                    <h3>Rankea: </h3>
+                                    <div id="rankeoComent"></div>
+                                    </div>
                                 </li>
                                 <li>
                                     <input class="submit" id="enviar" value="Enviar mensaje" type="submit">

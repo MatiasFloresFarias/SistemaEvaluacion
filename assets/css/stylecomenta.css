@@ -202,3 +202,13 @@ body {
     -ms-box-shadow: 0 0 10px 5px #356b0b inset;
     -o-box-shadow: 0 0 10px 5px #356b0b inset;
 }
+
+#rank{
+    display: flex;
+}
+#rankeoComent{
+    align-content: center;
+}
+#rank h3{
+    margin-right: 3em;
+}
