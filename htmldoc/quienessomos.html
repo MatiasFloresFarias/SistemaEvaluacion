@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
     <link rel="stylesheet" href="../assets/css/styleQuienesSomos.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <script src="../assets/jQuery/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -16,12 +19,12 @@
             <input type="checkbox" id="menu-bar">
             <label class="fontawesome-align-justify" for="menu-bar"></label>
             <nav class="menu">
-                <a href="../index.html">Inicio</a>
-                <a href="quienessomos.html">Quienes Somos</a>
-                <a href="comenta.html">Comenta Al Profe</a>
-                <a href="blog.html">Blog</a>
+                <a href="index.html">Inicio</a>
+
+                <a href="blog.html">Blog</a>                    
+                <a href="bestprofe.html">MejorProfesor</a>                    
+                <a href="comenta.html">Comenta</a>                   
                 <a href="buscador.html">BuscaTuProfe</a>
-                <a href="bestprofe.html">Mejor Profesor</a>
                 <a href="dondeestamos.html">Contacto</a>
                 <a id="usuario">Log-in</a>
             </nav>
@@ -71,18 +74,19 @@
 
         </section>
 
-
+        <div id="dialog1" title="Log-out">
+            <p> "te has deslogueado, adios maldita lisiada"</p>
+        </div>
 
     </main>
     <!-- -------------------------------------Footer-------------------------------------------------- -->
     <footer>
         <div class="contenedor">
-            <p class="copy">Ejemplo de footer &copy; 2020</p>
-
+            <p class="copy">Desarrollado para <a href="www.awakelab.cl"><b>Awakelab</b></a> &copy; 2020</p>
         </div>
     </footer>
 
-
+    <script src="../assets/js/quienessomos.js"></script>
 </body>
 
 </html>

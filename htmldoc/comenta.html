@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comenta</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/eggplant/jquery-ui.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/stylecomenta.css">
     <script src="../assets/jQuery/jquery-3.5.1.js"></script>
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="../assets/js/rankeo.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 </head>
 
@@ -26,12 +29,13 @@
                 <input type="checkbox" id="menu-bar">
                 <label class="fontawesome-align-justify" for="menu-bar"></label>
                 <nav class="menu">
-                    <a href="../index.html">Inicio</a>
-                    <a href="quienessomos.html">Quienes Somos</a>
-                    <a href="comenta.html">Comenta Al Profe</a>
-                    <a href="blog.html">Blog</a>
+                    <a href="index.html">Inicio</a>
+
+                    <a href="blog.html">Blog</a>                    
+                    <a href="bestprofe.html">MejorProfesor</a>                    
+
                     <a href="buscador.html">BuscaTuProfe</a>
-                    <a href="bestprofe.html">Mejor Profesor</a>
+                    <a href="quienessomos.html">QuienesSomos</a>
                     <a href="dondeestamos.html">Contacto</a>
                     <a id="usuario">Log-in</a>
                 </nav>
@@ -202,6 +206,10 @@
                     </tr>
                 </tbody>
             </table>
+
+            <div id="dialog1" title="Log-out">
+                <p> "te has deslogueado, adios maldita lisiada"</p>
+            </div>
 
         </main>
         <!-- -------------------------------------Footer-------------------------------------------------- -->
