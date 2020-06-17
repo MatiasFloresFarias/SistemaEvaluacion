@@ -46,21 +46,21 @@ $(function () {
 });
 $(function () {
   $("#augusto").rateYo({
-    rating: 3.5,
+    rating: 3,
     readOnly: true
   });
  
 });
 $(function () {
-  $("#rankeoComent").rateYo({
-    rating: 3.5,
+  $("#nazaret").rateYo({
+    rating: 4,
     readOnly: true
   });
  
 });
 $(function () {
-  $("#rankeoComent").rateYo({
-    rating: 3.5,
+  $("#yodita").rateYo({
+    rating: 5,
     readOnly: true
   });
  
