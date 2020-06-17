@@ -7,7 +7,7 @@ $(function() {
             $.each(usersArray, function(_, obj) {
                 // console.log(val,obj.name.toLowerCase().indexOf(val),obj)
                 if (obj.name.toLowerCase().indexOf(val) != -1 || obj.university.toLowerCase().indexOf(val) != -1 || obj.subject.toLowerCase().indexOf(val) != -1 || obj.university1.toLowerCase().indexOf(val) != -1 || obj.subject1.toLowerCase().indexOf(val) != -1) {
-                    $("#users").append('<div class="user-card"><span class="user-info">' + obj.name + '</span><br/><img class="user-image" src="' + obj.image + '"/></div>');
+                    $("#users").append('<div class="user-card"><span class="user-info">' + obj.name + '</span><br/><a href=' + obj.url + '><img class="user-image" src="' + obj.image + '"/></div>');
                 }
             });
         }
@@ -22,7 +22,8 @@ var usersArray = [{
         subject: "fisica",
         subject1: "matematicas",
         age: 58,
-        image: "../assets/img/profjpg/58.jpg"
+        image: "../assets/img/profjpg/58.jpg",
+        url: "profesores/profe1.html"
     },
     {
         name: "Angelica San Martin",
@@ -31,7 +32,8 @@ var usersArray = [{
         subject: "termodinamica",
         subject1: "gestion energética",
         age: 48,
-        image: "../assets/img/profjpg/48.jpg"
+        image: "../assets/img/profjpg/48.jpg",
+        url: "profesores/profe2.html"
     },
     {
         name: "Augusto Granados",
@@ -40,7 +42,9 @@ var usersArray = [{
         subject: "Calculo 3",
         subject1: "Algebra 3",
         age: 64,
-        image: "../assets/img/profjpg/64.jpg"
+        image: "../assets/img/profjpg/64.jpg",
+        url: "profesores/profe3.html"
+
     },
     {
         name: "Clotilde Montoya",
@@ -49,7 +53,8 @@ var usersArray = [{
         subject: "Sociologia",
         subject1: "Sicologia",
         age: 46,
-        image: "../assets/img/profjpg/46.jpg"
+        image: "../assets/img/profjpg/46.jpg",
+        url: "profesores/profe4.html"
     },
     {
         name: "Eugenio Ruz",
@@ -58,7 +63,8 @@ var usersArray = [{
         subject: "Programacion",
         subject1: "Bases de datos",
         age: 55,
-        image: "../assets/img/profjpg/55.jpg"
+        image: "../assets/img/profjpg/55.jpg",
+        url: "profesores/profe5.html"
     },
     {
         name: "Robert Perez",
@@ -67,7 +73,8 @@ var usersArray = [{
         subject: "fisica 2",
         subject1: "fisica 4",
         age: 38,
-        image: "../assets/img/profjpg/38.jpg"
+        image: "../assets/img/profjpg/38.jpg",
+        url: "profesores/profe6.html"
     },
     {
         name: "Monica Carro",
@@ -76,7 +83,9 @@ var usersArray = [{
         subject: "Programacion",
         subject1: "Desarrollo de aplicaciones web",
         age: 33,
-        image: "../assets/img/profjpg/33.jpg"
+        image: "../assets/img/profjpg/33.jpg",
+        url: "profesores/profe7.html"
+
     },
     {
         name: "Isidora Martinez",
@@ -85,7 +94,8 @@ var usersArray = [{
         subject: "Programacion",
         subject1: "Sistemas de informacion y gestion",
         age: 37,
-        image: "../assets/img/profjpg/37.jpg"
+        image: "../assets/img/profjpg/37.jpg",
+        url: "profesores/profe8.html"
     },
     {
         name: "Amaya Mayor",
@@ -94,7 +104,8 @@ var usersArray = [{
         subject: "microeconomia",
         subject1: "macroeconomia",
         age: 39,
-        image: "../assets/img/profjpg/39.jpg"
+        image: "../assets/img/profjpg/39.jpg",
+        url: "profesores/profe9.html"
     },
     {
         name: "Nazaret Jimenez",
@@ -102,8 +113,9 @@ var usersArray = [{
         university1: "PUC",
         subject: "Finanzas",
         subject1: "Religion",
-        age: 53,
-        image: "../assets/img/profjpg/53.jpg"
+        age: 59,
+        image: "../assets/img/profjpg/59.jpg",
+        url: "profesores/profe10.html"
     },
     {
         name: "Brian Guzman",
@@ -112,7 +124,9 @@ var usersArray = [{
         subject: "Programacion",
         subject1: "Bases de datos",
         age: 45,
-        image: "../assets/img/profjpg/Brian.jpg"
+        image: "../assets/img/profjpg/Brian.jpg",
+        url: "profesores/profe11.html"
+
     },
     {
         name: "Oscar Gonzalez",
@@ -121,7 +135,8 @@ var usersArray = [{
         subject: "Programacion",
         subject1: "Bases de datos",
         age: 44,
-        image: "../assets/img/profjpg/Oscar.jpg"
+        image: "../assets/img/profjpg/Oscar.jpg",
+        url: "profesores/profe12.html"
     },
 
 ];
