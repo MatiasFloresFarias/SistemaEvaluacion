@@ -43,14 +43,14 @@
                 </article>
 
                 <article id="formulariodecontacto">
-                    <form action="">
+                    <form action="" onsubmit="return false">
 
                         <legend>Formulario de contacto</legend>
                         <h1>Contactanos</h1><br>
-                        <input type="text" value="Nombre" placeholder="Ingrese su nombre"><br>
-                        <input type="email" value="Correo" placeholder="Ingrese su correo electronico"><br>
+                        <input type="text" placeholder="Ingrese su nombre"><br>
+                        <input type="email" placeholder="Ingrese su correo electronico"><br>
                         <textarea name="detalles" id="detalle" cols="30" rows="6" placeholder="Comente mejoras..."></textarea><br>
-                        <button> Enviar Datos</button>
+                        <button id="boton"> Enviar Datos</button>
 
                     </form>
 
@@ -60,6 +60,10 @@
 
             <div id="dialog1" title="Log-out">
                 <p> "te has deslogueado, adios maldita lisiada"</p>
+            </div>
+
+            <div id="dialog2" title="Gracias por tu feedback">
+                <p> "Hemos recibido tu mensaje, jamas lo leeremos pero apreciamos el tiempo que te tomaste"</p>
             </div>
 
         </main>
@@ -72,7 +76,7 @@
             </div>
         </footer>
 
-
+        <script src="../assets/js/dondeestamos.js"></script>
         <script src="../assets/js/login.js"></script>
     </body>
 </body>
