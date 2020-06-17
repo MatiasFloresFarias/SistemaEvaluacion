@@ -1,4 +1,11 @@
 $(function() {
+    $.each(usersArray, function(_, obj) {
+        $("#users").append('<div class="user-card"><span class="user-info">' + obj.name + '</span><br/><a href=' + obj.url + '><img class="user-image" src="' + obj.image + '"/></div>');
+    });
+});
+
+
+$(function() {
     $("#search").on("keyup", function() {
         $("#users").html("");
         var val = $.trim(this.value);
